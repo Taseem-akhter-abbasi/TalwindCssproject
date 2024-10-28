@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#openModal {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Modal is hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    text-align: center;
+    margin: 10px 0;
+    color: #888;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.google-button {
+    background-color: #db4437; /* Google Red */
+    color: white;
+}
+
+.linkedin-button {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+}
+
+.social-button img {
+    width: 20px; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.social-button:hover {
+    opacity: 0.9; /* Slight opacity on hover */
+}

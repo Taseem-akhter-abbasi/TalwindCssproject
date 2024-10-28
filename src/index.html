@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My App</h1>
+    <p>This is some content that can be displayed on the page.</p>
+    
+    <button id="openModal">Login</button>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="divider">OR</div>
+            <div class="social-buttons">
+                <button class="social-button google-button">
+                    <img src="path/to/google-icon.png" alt="Google" />
+                    Sign up with Google
+                </button>
+                <button class="social-button linkedin-button">
+                    <img src="path/to/linkedin-icon.png" alt="LinkedIn" />
+                    Sign up with LinkedIn
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
